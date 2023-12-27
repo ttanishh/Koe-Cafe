@@ -1,0 +1,257 @@
+/* This is for the Reservation of the table */
+.Reservation {
+    /* Keep your existing styles for the background image */
+    background-image: url("https://media.istockphoto.com/id/1467739359/photo/cup-of-coffee-with-smoke-and-coffee-beans-on-old-wooden-background.jpg?s=1024x1024&w=is&k=20&c=vQsW4C4AsnwZ0i7tSrHO6QyGMnfKS4eyhUXdsDED5wo=");
+    /* Ensure position relative for positioning children elements */
+    position: relative;
+    min-height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.reservation-table {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: 0 auto; */
+    padding: 20px;
+    max-width: 500px; /* Adjust the width as necessary */
+    /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners for the form */
+    /* box-shadow: 00 10px rgba(0, 0, 0, 0.3); Add a slight shadow for depth */
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items horizontally and vertically */
+    text-align: center; /* Center text within inputs */
+}
+
+.name-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%; /* Occupy full width */
+    max-width: 400px; /* Limit width for better readability */
+}
+.reservation-form input{
+    margin: 1rem;
+    width: 900px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px 0; /* Add some padding to the input */
+    box-sizing: border-box;
+
+}
+
+.reservation-form textarea{
+    margin: 1rem;
+    /* width:auto; */
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px 0; /* Add some padding to the input */
+    box-sizing: border-box;
+}
+.reservation-form input::placeholder{
+    color: white;
+    font-size: larger;
+    font-weight: 200;
+    padding: 3px;
+    padding-bottom: 23px;
+}
+.reservation-form textarea::placeholder{
+    color: white;
+    font-size: larger;
+    font-weight: 200;
+    padding-bottom: 23px;
+}
+
+.reservation-form button{
+    margin: 1rem;
+}
+
+#button{
+    display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #544639; /* Brown */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+    
+}
+#button:hover{
+    background-color: #fc6; /* Yellow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+/* This is for the menu list */
+
+
+.Menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 44px;
+    margin: 3px;
+    /* background-color: antiquewhite; */
+}
+.Menu{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: #544639;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    padding: 3px;
+}
+
+#first-list{
+    align-items: flex-start;
+}
+
+#second-list{
+    align-items: flex-end;
+}
+
+
+.menu-item img {
+    width: 200px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+    box-shadow: none; /* Initial box-shadow set to none */
+}
+
+.menu-item img:hover {
+    box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.5); /* Adding box-shadow on hover */
+}
+
+
+.details{
+    /* padding: 2px; */
+    margin-left: 30px;
+}
+
+.details-right{
+    margin-right: 30px;
+}
+
+.details h2{
+    color: #fc6;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.details p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    text-align: left;
+}
+
+.details-right h2{
+    color: #fc6;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+
+.details-right p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    margin-left: 134px;
+}
+
+
+#menu-button{
+    display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #544639; /* Brown */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#menu-button:hover{
+         background-color: #fc6; /* Yellow */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+      
+}
+.menu-button{
+    display: block;
+    margin-left: 47%;
+}
+
+
+
+/* parallex */
+
+body{
+    background: #f2f2f2;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin-top: 1px;
+}
+
+.parallex-1{
+    background: url('antique-cafe-bg-04.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallex-inner{
+    padding: 10% 0;
+}
+
+h2{
+    font-size: 32px;
+    columns: #555;
+    text-align: center;
+    font-weight: 2px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.parallex-2{
+    background: url('antique-cafe-bg-03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
